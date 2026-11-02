@@ -1,0 +1,43 @@
+.pledge {
+	position: relative;
+	margin-top: 40px;
+	background:
+		radial-gradient(600px 220px at 85% 50%, rgba(212, 168, 74, 0.13), transparent 70%),
+		repeating-linear-gradient(0deg, transparent 0 39px, rgba(212, 168, 74, 0.05) 39px 40px),
+		repeating-linear-gradient(90deg, transparent 0 39px, rgba(212, 168, 74, 0.05) 39px 40px),
+		#0a0a0c;
+}
+.pledge::before, .pledge::after {
+	content: '';
+	position: absolute;
+	inset-inline: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+	opacity: 0.55;
+}
+.pledge::before { top: 0; }
+.pledge::after { bottom: 0; }
+.pledge__grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding-block: 64px; }
+.pledge__title { margin-bottom: 6px; font-size: 18px; font-weight: 600; color: var(--gold); }
+.pledge__slogan { font-size: clamp(28px, 3.6vw, 44px); font-weight: 800; line-height: 1.5; }
+.pledge__lines {
+	position: relative;
+	padding-inline-end: 44px;
+	font-size: clamp(20px, 2.4vw, 28px);
+	font-weight: 600;
+	line-height: 1.9;
+	color: var(--ink-soft);
+}
+.pledge__lines::before {
+	content: '';
+	position: absolute;
+	inset-block: 0;
+	right: 0;
+	width: 2px;
+	background: linear-gradient(180deg, transparent, var(--gold), transparent);
+}
+@media (max-width: 860px) {
+	.pledge__grid { grid-template-columns: 1fr; gap: 18px; }
+	.pledge__lines { padding: 18px 0 0; }
+	.pledge__lines::before { inset: 0 0 auto; width: auto; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+}

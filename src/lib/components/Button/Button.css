@@ -1,0 +1,23 @@
+.btn {
+	display: inline-block;
+	padding: 14px 32px;
+	border-radius: 999px;
+	border: 1.5px solid transparent;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+	transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.15s, filter 0.25s;
+}
+.btn:active { transform: scale(0.97); }
+.btn--solid {
+	background: linear-gradient(180deg, var(--gold-light), var(--gold-dark));
+	color: #1a1405;
+	box-shadow: 0 0 14px rgba(242, 210, 126, 0.22);
+}
+.btn--solid:hover { filter: brightness(1.06); }
+.btn--outline {
+	border-color: rgba(212, 168, 74, 0.6);
+	background: rgba(212, 168, 74, 0.06);
+	color: var(--ink);
+}
+.btn--outline:hover { background: rgba(212, 168, 74, 0.14); }

@@ -1,0 +1,5 @@
+.footer { position: relative; padding-block: 26px; font-size: 13px; color: #7e7b70; background: #070708; }
+.footer::before { content: ''; position: absolute; inset: 0 0 auto; height: 1px; background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent); opacity: 0.55; }
+.footer__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.footer__brand { display: flex; align-items: center; gap: 12px; }
+.footer__brand img { width: 30px; height: auto; }

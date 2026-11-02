@@ -1,0 +1,22 @@
+.services__list { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; margin-top: 34px; }
+.services__card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: calc(33.333% - 15px);
+	min-width: 250px;
+	min-height: 158px;
+	padding: 18px 20px 16px;
+	box-shadow: 0 16px 34px rgba(0, 0, 0, 0.55);
+	background:
+		radial-gradient(260px 140px at 85% 0, rgba(212, 168, 74, 0.16), transparent 70%) padding-box,
+		linear-gradient(#18181a, #0b0b0d) padding-box,
+		var(--gold-border) border-box;
+}
+.services__icon { position: absolute; top: 18px; left: 20px; font-size: 30px; color: #b9975a; display: flex; }
+.services__card h3 { margin-top: 14px; font-size: 16px; font-weight: 700; line-height: 1.8; }
+.services__card p { font-size: 12.5px; line-height: 1.9; color: var(--muted); }
+.services__card a { display: flex; align-items: center; gap: 4px; margin-top: auto; padding-top: 8px; font-size: 12px; font-weight: 600; color: var(--gold); }
+.services__card a:hover { color: var(--gold-light); }
+@media (max-width: 860px) { .services__card { width: 100%; } }

@@ -1,0 +1,32 @@
+.container {
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: 28px;
+}
+.section { padding-block: 70px; position: relative; }
+.gold {
+	background: linear-gradient(180deg, var(--gold-light), var(--gold) 65%, #a77f2c);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.section-title { font-size: clamp(28px, 3.4vw, 34px); font-weight: 800; line-height: 1.6; }
+.section-lead { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+.icon {
+	width: 1em;
+	height: 1em;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	flex: none;
+}
+/* کارت با کادر طلایی گرادیانی */
+.gold-card {
+	border: 1px solid transparent;
+	border-radius: var(--radius);
+	background:
+		linear-gradient(#17171a, #0b0b0d) padding-box,
+		var(--gold-border) border-box;
+}

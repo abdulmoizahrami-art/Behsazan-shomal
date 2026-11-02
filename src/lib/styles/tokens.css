@@ -1,0 +1,15 @@
+:root {
+	--bg: #09090b;
+	--gold: #d4a84a;
+	--gold-light: #f2d27e;
+	--gold-dark: #c3993f;
+	--ink: #f3ecd9;
+	--ink-soft: #cdc8b8;
+	--muted: #8f8b7e;
+	--line: rgba(212, 168, 74, 0.32);
+	--gold-border: linear-gradient(135deg, #f2d27e, #6f531b 38%, #d4a84a 72%, #5c4415);
+	--radius: 18px;
+	--container: 1100px;
+	--font: 'Vazirmatn Variable', Vazirmatn, Tahoma, sans-serif;
+	color-scheme: dark;
+}
